@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .out {
+        max-width: 500px;
+        background: lightskyblue;
+        display: flex;
+      }
+      .inner {
+        width: 100%;
+        background: grey;
+        padding: 10px;
+      }
+
+      .inner:first-child {
+        min-width: 300px;
+      }
+      .inner:nth-child(2) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="out">
+      <div class="inner">Flex One minwidth 300px</div>
+      <div class="inner">Som text</div>
+    </div>
+  </body>
+</html>
